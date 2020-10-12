@@ -43,6 +43,37 @@ myBody.onclick = function() {
 const myUl = document.querySelector ('ul');
 const liElement = document.createElement('li');
 
-liElement.textContent = "New Item of the List"
+liElement.textContent = "New Item of the List";
 
 myUl.appendChild(liElement);
+
+// Create Red paragraph
+// EXERCISE 1
+const redP = document.createElement('p');
+redP.textContent = "Hey, I am red!";
+redP.style.color = 'red';
+myBody.insertBefore(redP,myButton)
+
+
+// Create Blue h3
+// EXERCISE 2
+const bluH3 = document.createElement('h3');
+bluH3.textContent = "I am a blue h3!";
+bluH3.style.color = 'blue';
+myBody.insertBefore(bluH3,myButton)
+
+
+// Create a div with a black border and pink backgroud
+// EXERCISE 3
+const newDiv = document.createElement('div');
+newDiv.style.cssText = 'border: solid 1px black; background:pink;';
+
+
+// Create a h1 and a paragraph inside the new Div
+// EXERCISE 4
+newDiv.innerHTML = "<h1>I’m in a div</h1><p>ME TOO!</p>"
+
+myBody.insertBefore(newDiv,myButton);
+
+
+
