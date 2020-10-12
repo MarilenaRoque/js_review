@@ -33,3 +33,16 @@ function setUserName() {
     let storedName = localStorage.getItem('name');
     myHeading.textContent = 'Mozilla is cool, ' + storedName;
   }
+
+const myBody = document.querySelector('body');
+
+myBody.onclick = function() {
+    myBody.classList.toggle('newstyle');
+}
+
+const myUl = document.querySelector ('ul');
+const liElement = document.createElement('li');
+
+liElement.textContent = "New Item of the List"
+
+myUl.appendChild(liElement);
